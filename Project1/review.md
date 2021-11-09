@@ -63,4 +63,5 @@ The running file is roslaunch robot_vision robot_vision3.launch, training classi
 
 reference
 [1]	Li Ming. Target recognition and pose estimation based on stereo vision [D]. Huazhong University of Science and Technology, 2020.
+
 [2]	Liu Bin, Xiong Guoyou, Gao Purun, Lu Bo, Yang Zeming, Yang Bin, Cao Tianen, Yang Guangcan, Yang Tao, Hu Fangfang. A target recognition and monitoring method based on LiDAR point cloud data [P]. Hubei Province: CN113298163A, 2021-08-24.
