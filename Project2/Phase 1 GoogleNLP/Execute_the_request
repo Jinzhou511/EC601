@@ -1,0 +1,5 @@
+curl -X POST \
+  -H "Authorization: Bearer $(gcloud auth application-default print-access-token)" \
+  -H "Content-Type: application/json" \
+  https://automl.googleapis.com/v1/projects/782062538967/locations/us-central1/models/TCN911123504496115712:predict \
+  -d @request.json
