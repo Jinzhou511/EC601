@@ -1,4 +1,4 @@
-# Rototics and Motion/Path Planning
+# Rototics and Motion&Path Planning
 
 
 % I.→1.→(1)
