@@ -1,27 +1,30 @@
+# Rototics and Motion/Path Planning
+
+
 % I.→1.→(1)
-I.Problem Statement:  
+### I.Problem Statement:  
 (What does the topic cover? Why it is important?)
 
 This topic can be basically divided into two parts:
-1. The Soul-Robot data processing, the key problem: image processing, point cloud processing, target recognition and machine learning
-2. The Body-Robot interacts with the physical world: robotic arm motion algorithm, movement algorithm, end-of-freedom design
+* The Soul-Robot data processing, the key problem: image processing, point cloud processing, target recognition and machine learning
+* The Body-Robot interacts with the physical world: robotic arm motion algorithm, movement algorithm, end-of-freedom design
 
 I think that the first part, that is, the robot vision and machine learning algorithm part is the core part, it contains methods for the robot camera to obtain 2D image, 3D depth image, points cloud and further processing. This part is an important prerequisite for robot target recognition and corresponding feedback. After obtaining high-quality image or point cloud data, the machine learning model that has been trained is recognized, and finally the target information is returned, such as what the object is, the position and posture information of the object, etc.
 
 The other part is the motion algorithm when the robot interacts with the physical world. After the robot obtains the recognition result, it must perform specified operations on the target. The realization of these operations requires appropriate navigation methods, robotic arm motion planning, and flexible operation technology. We can almost say that where there are people working, robots can go to work in this place, and even where people can’t reach, robots can also reach there and perform work. This means that, first, robots can assist humans in completing tasks in a large number of fields and scenarios and improve work efficiency and accuracy, second, special robots designed for special environments can work in extreme scenarios to prevent humans from being dangerous. We can give examples based on scenarios. For example, in a precision processing factory, such as chip processing and drug processing, every step of the operation requires extremely high precision. But humans often cannot do such precise operations, so factories can choose robots to operate, from identifying the operating area to completing the operation, and humans only need to adjust the robots and check the correctness of the results.
 
-II.Applications
+### II.Applications
 (What are applications of the topic? What is the societal significance of the research?)
 
 There are many applicable scenarios and fields for this theme. The following include medical scenarios, manufacturing and processing scenarios, and life service scenarios. In addition to the above, it also includes a variety of special environments.
 
-1. Medical scenarios: compound medical robots, laparoscopic surgery robots. The compound medical robot refers to the service assistant robot in the medical field, which is mainly used for the assistance of the inpatient department and the auxiliary work of the non-surgical field, such as guiding patients to seek medical treatment by themselves. The current development of surgical robots is still dominated by surgeons. For example, the Da Vinci laparoscopic robot and the Chinese ‘Miaoshou-S’ laparoscopic robot generally cannot make autonomous judgments, but they can be controlled by humans and made precise movements by the operating end with a high degree of freedom. The recognition of irregular organ images and lesion images is thrown in the research. Due to the inexplicability of computer-aided diagnosis and the huge amount of data of three-dimensional images (such as MRI), there is still a lot of room for development in this area ("Prometheus"). '' in the emergency medical warehouse). The recognition of irregular organ images and lesion images is still under study. Due to the inexplicability of computer-aided diagnosis and the huge amount of data in three-dimensional images (such as MRI), there is still a lot of room for development in this area (refer to the emergency medical warehouse in movie "Prometheus").
+* Medical scenarios: compound medical robots, laparoscopic surgery robots. The compound medical robot refers to the service assistant robot in the medical field, which is mainly used for the assistance of the inpatient department and the auxiliary work of the non-surgical field, such as guiding patients to seek medical treatment by themselves. The current development of surgical robots is still dominated by surgeons. For example, the Da Vinci laparoscopic robot and the Chinese ‘Miaoshou-S’ laparoscopic robot generally cannot make autonomous judgments, but they can be controlled by humans and made precise movements by the operating end with a high degree of freedom. The recognition of irregular organ images and lesion images is thrown in the research. Due to the inexplicability of computer-aided diagnosis and the huge amount of data of three-dimensional images (such as MRI), there is still a lot of room for development in this area ("Prometheus"). '' in the emergency medical warehouse). The recognition of irregular organ images and lesion images is still under study. Due to the inexplicability of computer-aided diagnosis and the huge amount of data in three-dimensional images (such as MRI), there is still a lot of room for development in this area (refer to the emergency medical warehouse in movie "Prometheus").
 
-2. Industrial assembly line: chip processing, medicine processing, machine manufacturing. Both chip and drug processing are precision technologies, and as the demand increases, any small error will cause huge losses. In drug processing, the added amount of a certain drug can be calculated and measured by the robot's high-speed camera and adjusted in real time.
+* Industrial assembly line: chip processing, medicine processing, machine manufacturing. Both chip and drug processing are precision technologies, and as the demand increases, any small error will cause huge losses. In drug processing, the added amount of a certain drug can be calculated and measured by the robot's high-speed camera and adjusted in real time.
 
-3. Life services: smart logistics, contactless transportation (COVID-19), unmanned driving. In the foreseeable next few years, COVID-19 will always coexist with humans. With the birth of COVID-19, the corresponding safety measures include contactless unmanned vehicles, such as the "kuafu" unmanned vehicle developed by the Hong Kong University of Science and Technology. Similarly, unmanned technology companies have sprung up like bamboo shoots. Unmanned vehicles need to model the surroundings through images or lasers, and make autonomous driving judgments through real-time recognition of surrounding objects.
+* Life services: smart logistics, contactless transportation (COVID-19), unmanned driving. In the foreseeable next few years, COVID-19 will always coexist with humans. With the birth of COVID-19, the corresponding safety measures include contactless unmanned vehicles, such as the "kuafu" unmanned vehicle developed by the Hong Kong University of Science and Technology. Similarly, unmanned technology companies have sprung up like bamboo shoots. Unmanned vehicles need to model the surroundings through images or lasers, and make autonomous driving judgments through real-time recognition of surrounding objects.
 
-4. Special fields: underwater exploration, military, rescue, outer space, (some extreme areas that are dangerous to humans or cannot be reached by humans)
+* Special fields: underwater exploration, military, rescue, outer space, (some extreme areas that are dangerous to humans or cannot be reached by humans)
 
 So what is the societal significance of the research?
 
@@ -31,11 +34,11 @@ So what is the societal significance of the research?
 4. Promote the development of robotics and related disciplines, such as materials science, mechanical structure, computer vision, machine learning, motion dynamics, etc.
 5. However, the cost of each robot is very high, and the maximum benefit is the key to the popularization and development of hand-eye robots.
 
-III.Pick an area of focus that interests you in the topic
+### III.Pick an area of focus that interests you in the topic
 
 As I mentioned before, the core problem of the hand-eye robot is The Soul. How to get closer to the real-life recognition target, and how to make accurate and precise operations after recognizing the target is a problem we need to consider. And I think that the point cloud data contains more information such as the depth of the object than the two-dimensional image. It can provide more operation information for the hand-eye robot and can be used as the input of the deep learning model. So 3D point cloud recognition will be my entry point.
 
-IV.Literature review
+### IV.Literature review
 (As comprehensive as you can, research the different approaches and solutions in research community and industry)
 
 The following includes a brief description of some papers and patents.
@@ -47,7 +50,7 @@ The following includes a brief description of some papers and patents.
 (2) Use a layer-based accumulation module to accumulate point cloud data to enhance the semantic information of the object;
 (3) Use the random forest algorithm to classify the features and determine whether the staff wears a helmet;
 
-V.Open Source research
+### V.Open Source research
 (Research the different open source projects that touch the topic of your interest, Duplicate the results)
 
 By reading our papers and patents, we can find that the point cloud recognition solutions will be related to "1. Radar data input 2. Point cloud data filtering 3 Using PointNet or PointNet++ and other feature classification networks for recognition" 
@@ -61,7 +64,7 @@ The Python version used in this project is 2.7. If we want to learn this project
 ·	pcd_to_pointcloud
 The running file is roslaunch robot_vision robot_vision3.launch, training classifier: rosrun robot_vision trainer.py, training dataset open source has provided.
 
-reference
+#### reference
 
 [1]	Li Ming. Target recognition and pose estimation based on stereo vision [D]. Huazhong University of Science and Technology, 2020.
 
