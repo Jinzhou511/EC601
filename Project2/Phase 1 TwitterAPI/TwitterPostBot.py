@@ -26,12 +26,10 @@ def store_last_seen(FILE_NAME, last_seen_id):
     file_write.close()
     return
 
-#tweets = api.mentions_timeline(read_last_seen(FILE_NAME), tweet_mode='extended')
+tweets = api.mentions_timeline(read_last_seen(FILE_NAME), tweet_mode='extended')
 def reply():
 
     print(read_last_seen(FILE_NAME))
-    #print(tweet_mode='extended')
-    tweets = api.mentions_timeline(1442165160123277319,tweet_mode='extended')
     for tweet in reversed(tweets):
         if '#zjz' in tweet.full_text.lower():
             print(str(tweet.id)+'-'+tweet.full_text)
