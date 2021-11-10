@@ -1,6 +1,8 @@
 import tweepy
- 
+import random
+
 def main():
+ 
     # You need input your own key and secret
     twitter_auth_keys = {
         "consumer_key"        : "xxxx",
@@ -23,7 +25,8 @@ def main():
     "Good evening",
     "And good night",
     ]
-
+    
+    # Randomly choose a message and post it
     message = random.choice(messages)
     status = api.update_status(status=message)
  
