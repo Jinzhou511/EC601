@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 
 # You need input your own key and secret
 twitter_auth_keys = {
-    "consumer_key"        : "JR6B8K1QWpYeMqMKYAiGkIF3l",
-    "consumer_secret"     : "A83zp1kFCtrBTNmpwNnxXWRLRTsSshmRkRkl9MV29Bu7DYkBZm",
-    "access_token"        : "1393886621729271815-MSUMYiX5E7dOqv688WtlRDL861LVEg",
-    "access_token_secret" : "kRPXGNrEecnKUTg1n0Xm4nxFQ22loyuoKkFdbjzSYdskM"
+    "consumer_key"        : "xxxx",
+    "consumer_secret"     : "xxxx",
+    "access_token"        : "xxxx",
+    "access_token_secret" : "xxxx"
 }
 
 # Authorization part
