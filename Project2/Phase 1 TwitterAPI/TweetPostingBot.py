@@ -16,8 +16,16 @@ def main():
  
     # You need type in different messages every time,
     # because twitter doesn't allow posting same tweets in a short time
-    tweet = "Twitter postingBot is now posting a tweet!"
-    status = api.update_status(status=tweet)
+    messages = [
+    "Good morning",
+    "And in case I don't see you",
+    "Good afternoon",
+    "Good evening",
+    "And good night",
+    ]
+
+    message = random.choice(messages)
+    status = api.update_status(status=message)
  
 if __name__ == "__main__":
     main()
