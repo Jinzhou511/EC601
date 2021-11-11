@@ -1,2 +1,6 @@
 # EC601Project3
-Here is EC601 project 3, which contains the test and unit test of project2. In the test, I optimized and simplified the original code, in order to make the code easier to detect the output of each function. I use the statement ‘’df = [’...’].apply(func)’’ to output each piece of code to achieve segmentation detection. In the unit test, I use the pylint function package mentioned in the slide to score the code, and constantly modify the naming style (such as snake naming, camel case naming), modify indentation, and delete redundant conditional judgment statements.
+Here is EC601 project 3, which contains the pylint test and unit test of project2. 
+
+Unfortunately, my sentiment analysis code was written in jupyter notebook, but I did not figure out how to run unit test in jupyter notebook, so I had to simplyfy the original code so that it can be run locally, and then used unit test for testing.
+
+Also, I used the pylint function package mentioned in the slide to score the code, and constantly modify the naming style (such as snake naming, camel case naming), modify indentation, and delete redundant conditional judgment statements.
