@@ -27,20 +27,14 @@ auth = tweepy.OAuthHandler(consumerKey,consumerSecret)
 auth.set_access_token(accessToken,accessTokenSecret)
 api=tweepy.API(auth,wait_on_rate_limit=True)
 
-# get 100 tweets 
-posts = api.user_timeline(screen_name="BillGates ",count=100,lang="en",tweet_mode="extended")
+# get n tweets from a user, n = 10
+posts = api.user_timeline(screen_name='ElonMusk',count=10,lang="en",tweet_mode="extended")
+print("show the n recent tweets:\n")
+i = 0
+for tweet in posts[0:10]:
+  i+=1
+  print(str(i)+')'+tweet.full_text+'\n')
 
-def cleanTxt(text):
-  text = re.sub(r'@[A-Za-z0-9]+','',text)
-  text = re.sub(r'#','',text)
-  text = re.sub(r'RT[\s]+','',text)
-  text = re.sub(r'https:\/\/S+','',text)
-  return(text)
-
-def getSubjectivity(text):
-  return TextBlob(text).sentiment.subjectivity
-def getPolarity(text):
-  return TextBlob(text).sentiment.polarity
 
 # word cloud
 allWords = ' '.join([twts for twts in df['Tweets']])
