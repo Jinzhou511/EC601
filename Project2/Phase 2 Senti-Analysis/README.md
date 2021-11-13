@@ -1,4 +1,7 @@
-# EC601project2Phase21
+# EC601 Project2 Phase2 
+
+Please see the .ipynb file for detailed result: `TwitterSentimentAnalysis.ipynb`
+
 This project can achieve: 
 
 ① Get a specified number of tweets from a specified user. In this case, I choose JoeBiden to be the analyzed user. 
