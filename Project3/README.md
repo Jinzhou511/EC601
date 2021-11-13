@@ -39,4 +39,13 @@ Also, I used the pylint function package mentioned in the slide to score the cod
 
 ## Result and report
 ### Unit test
+#### All condition are correct
+![image](https://user-images.githubusercontent.com/90535023/141605836-c8fbedfe-d41c-44f4-ba85-1456b4e90020.png)
+#### Assert the wrong condition by design
+![image](https://user-images.githubusercontent.com/90535023/141605830-b1de38d2-8cf9-4632-a2b1-c505d8f2bc3b.png)
+### Performance test
+#### We can see the percentage of time for each line
+![image](https://user-images.githubusercontent.com/90535023/141605891-a44ef909-82d4-4f70-a9b6-0b1d8d998ca5.png)
+
+
 
