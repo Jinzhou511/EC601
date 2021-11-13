@@ -34,4 +34,5 @@ There are still some small function mistakes, I might fixed it later.
 In this, I use `user_timeline`, `wordcloud` API to get n tweets from specifc user, and generate the wordcloud picture of the tweets. This function is the basic of further Sentiment Analysis.
 
 ![image](https://user-images.githubusercontent.com/90535023/141607512-f2dfda71-5f1d-47cb-9a2a-0d2956d30ecb.png)
+![Figure_1](https://user-images.githubusercontent.com/90535023/141607546-8435e390-806b-46df-898f-190687c3b9ee.png)
 
