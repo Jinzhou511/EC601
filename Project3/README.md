@@ -1,9 +1,11 @@
-# EC601Project3
+# EC601 Project3
 Here is EC601 project 3, which contains the unit test, performance test and pylint test of project2. 
 
-My project2-Sentiment Analysis was written in Jupyter Notebook, so it is quite different to run unit test for .ipynb files, therfore I also post a guidance as following.
+I want to first express my gratitude  to the two Teaching Assistants Feng Wang and Niantong Dong, their guidance and suggestion is very significant and really helpful!
 
-## How to do unit test for .ipynb
+My project2-Sentiment Analysis was written in Jupyter Notebook, so it is quite different to run unit test for .ipynb files, therefore I also post a guidance as following.
+
+## 1. Unit test for .ipynb
 
 I explored 3 ways to do so, which are `doctest`,`unittest`,`testbook`. In the end, I decided on using testbook and pytest to finish unit testing. Official website of testbook: `https://testbook.readthedocs.io/en/latest/`
 
@@ -12,6 +14,7 @@ I explored 3 ways to do so, which are `doctest`,`unittest`,`testbook`. In the en
 Please see `code_for_unittest.ipynb`
 
 * Third, write your test code in .py, such as 'test.py':
+
 `from testbook import testbook`
 
 `@testbook('/path/to/notebook.ipynb', execute=True)`(replace the path)
@@ -25,7 +28,7 @@ Please see `code_for_unittest.ipynb`
 Please see `unit_test.py`
 * Forth, run `pytest test.py` in terminal, then you can see result.
 
-## Performance test
+## 2. Performance test
 
 For performance test, I use `line_profiler`module to finish the work. 
 
@@ -33,11 +36,11 @@ For performance test, I use `line_profiler`module to finish the work.
 * Second, add `@profile` in your code before the first function. Please see `performance_test_code.py` line 36.
 * Third, run `kernprof -l -v performance_test_code.py` in terminal, then you will see the result, and the result will be saved into `performance_test_code.py.lprof`
 
-## Pylint test
+## 3. Pylint test
 
 Also, I used the pylint function package mentioned in the slide to score the code, and constantly modify the naming style (such as snake naming, camel case naming), modify indentation, and delete redundant conditional judgment statements.
 
-## Result and report
+## 4. Result and report
 ### Unit test
 #### All condition are correct
 ![image](https://user-images.githubusercontent.com/90535023/141605836-c8fbedfe-d41c-44f4-ba85-1456b4e90020.png)
@@ -46,6 +49,6 @@ Also, I used the pylint function package mentioned in the slide to score the cod
 ### Performance test
 #### We can see the percentage of time for each line
 ![image](https://user-images.githubusercontent.com/90535023/141605891-a44ef909-82d4-4f70-a9b6-0b1d8d998ca5.png)
-
-
+### Pylint test
+Please see `pylint_test_result.txt` for details.
 
