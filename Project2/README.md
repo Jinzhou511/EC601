@@ -1,5 +1,7 @@
 # Project2 
-In this dict, there are three parts:TwitterAPI, GoogleNLP, and Sentiment Analysis.
+In this dict, there are three parts: TwitterAPI, GoogleNLP, and Sentiment Analysis.
+
+Please see into the folder for more details.
 ## Phase 1
 ### · Twitter API (Please see folder `Phase 1 TwitterAPI`)
 
