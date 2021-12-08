@@ -1,8 +1,6 @@
 # EC601 Project3
 Here is EC601 project 3, which contains the unit test, performance test and pylint test of project2. 
 
-I want to first express my gratitude  to the two Teaching Assistants Feng Wang and Niantong Dong, their guidance and suggestion is very significant and really helpful!
-
 My project2-Sentiment Analysis was written in Jupyter Notebook, so it is quite different to run unit test for .ipynb files, therefore I also post a guidance as following.
 
 ## 1. Unit test for .ipynb
